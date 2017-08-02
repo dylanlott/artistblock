@@ -2,7 +2,7 @@
   <q-layout>
     <div slot="header" class="toolbar">
       <q-toolbar-title :padding="0">
-        <b>ArtistBlock</b> - <span style="font-size: 90%;">A Salt City Tattoo Project</span>
+        <b>ArtistBlock</b> - <span style="font-size: 85%;">A Salt City Tattoo Project</span>
       </q-toolbar-title>
     </div>
 
