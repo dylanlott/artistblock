@@ -26,8 +26,11 @@ plan.local('deploy', function (local) {
 plan.remote('deploy', function (remote) {
   remote.hostname()
   remote.with('cd ' + remote.runtime.webRoot, function () {
+    remote.log('Pulling latest version of app')
     remote.sudo('git pull origin master')
+    remote.log('Installing dependencies')
     remote.sudo('npm install')
+    remote.log('Building new version of app')
     remote.sudo('npm run build')
     remote.log('Deploy successful')
   })
