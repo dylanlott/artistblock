@@ -2,7 +2,7 @@
   <q-layout>
     <div slot="header" class="toolbar">
       <q-toolbar-title :padding="0">
-        Quasar Framework v{{$q.version}}
+        ArtistBlock - A Salt City Tatto
       </q-toolbar-title>
     </div>
 
@@ -20,7 +20,6 @@
             <template v-else>
               <span class="desktop-only">Move your mouse.</span>
               <span class="touch-only">Touch screen and move.</span>
-
             </template>
           </p>
         </div>
