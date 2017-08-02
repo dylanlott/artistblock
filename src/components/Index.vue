@@ -2,7 +2,7 @@
   <q-layout>
     <div slot="header" class="toolbar">
       <q-toolbar-title :padding="0">
-        ArtistBlock - A Salt City Tatto
+        <b>ArtistBlock</b> - <span style="font-size: 90%;">A Salt City Tattoo Project</span>
       </q-toolbar-title>
     </div>
 
@@ -25,8 +25,8 @@
         </div>
       </div> -->
       <div class="logo-container">
-        <button class="primary" @click="roll()">
-          <i class="on-left">mail</i> Roll the dice, boiii
+        <button class="primary raised" style="margin: 20px 0px" @click="roll()">
+          <i class="on-left">autorenew</i> Roll the dice, boiii
         </button>
 
         <div class="card">
@@ -40,10 +40,12 @@
           #2 {{ this.results.object2 }}
           </div>
         </div>
-
-
-
       </div>
+    </div>
+
+    <!-- Footer -->
+    <div slot="footer" class="toolbar">
+      Hivemind Apps &copy; 2017
     </div>
   </q-layout>
 </template>
@@ -74,6 +76,9 @@ export default {
       this.results = results
       return results
     }
+  },
+  mounted () {
+    this.roll()
   }
 }
 </script>
