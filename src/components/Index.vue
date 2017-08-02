@@ -51,10 +51,12 @@
 </template>
 
 <script>
+import objects from '../assets/objects.json'
+
 export default {
   data () {
     return {
-      objects: ['brain', 'balls', 'dick', 'shaft', 'titties', 'pussy'],
+      objects: objects.data,
       adjectives: ['big', 'small', 'green', 'red', 'blue', 'yellow'],
       results: {}
     }
