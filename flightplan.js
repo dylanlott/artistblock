@@ -5,10 +5,10 @@ var plan = require('flightplan')
 
 plan.target('prod', {
   host: '159.203.106.53',
-  username: 'root',
+  username: 'dylan',
   agent: process.env.SSH_AUTH_SOCK,
   webRoot: '/var/www/artistblock',
-  ownerUser: 'root',
+  ownerUser: 'dylan',
   repository: 'https://github.com/dylanlott/artistblock.git',
   branchName: 'master'
 })
